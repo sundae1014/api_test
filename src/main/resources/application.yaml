@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: fund-api-project
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:XE
+    username: busanbank
+    password: abc1234!
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+
+api:
+  key:
+    dart: 9530444a0034aaf762d9a34c446556878b2b0ac8
+    kofia: 8b78454bd4af1cfb488f9dbf25e18c07f68bb37fa063579c0a6726d35eb1afce
+  url:
+    dart: https://opendart.fss.or.kr/api/
+    kofia: https://apis.data.go.kr/1160100
